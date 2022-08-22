@@ -1,0 +1,27 @@
+// Основные настройки страницы
+body {
+	font-family: 'Noto Sans', sans-serif;
+	background: #fff;
+	color: #303030;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.35;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+.none {
+	display: none !important;
+}
+
+[class*="__container"] {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
