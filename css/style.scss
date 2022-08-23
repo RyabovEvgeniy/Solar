@@ -87,8 +87,8 @@ body {
 		bottom: 16px;
 		left: 275px;
 		&:hover {
-			+.bnt {
-				background-color: #A9A32A;
+			+ .bnt {
+				background-color: #a9a32a;
 			}
 		}
 	}
@@ -118,8 +118,63 @@ body {
 	display: inline-block;
 	min-height: 100px;
 	border-radius: 50%;
-	transition: all .3s ease-in;
+	transition: all 0.3s ease-in;
 	&:hover {
-		background-color: #A9A32A;
+		background-color: #a9a32a;
+	}
+}
+
+// Services
+
+.services {
+	padding: 150px 0px;
+
+	// .services__container
+
+	&__container {
+	}
+
+	// .services__title
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.37;
+		color: #868585;
+		margin: 0px 0px 60px 0px;
+	}
+
+	// .services__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .services__list
+
+	&__list {
+		max-width: 510px;
+	}
+
+	// .services__img
+
+	&__img {
+	}
+}
+.list-services {
+	// .list-services__title
+
+	&__title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.38;
+		margin: 0px 0px 15px 0px;
+	}
+
+	// .list-services__text
+
+	&__text {
+		margin: 0px 0px 50px 0px;
 	}
 }
