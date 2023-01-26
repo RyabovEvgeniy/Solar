@@ -9,6 +9,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.css">
 	<title>Солнечная электростанция</title>
 </head>
@@ -21,13 +24,13 @@
 					<img src="img/logo.svg" alt="logo">
 				</a>
 				<p class="header__text">Зеленый тариф для дома и бизнеса</p>
-				<h1 class="header__title">Солнечная электростанция</h1>
+				<h1 class="header__title title">Солнечная электростанция</h1>
 				<h3 class="header__subtitle">с доходом от 1000 $ в месяц</h3>
 				<div class="header__box">
-					<a class="header__btn-text" href="#">записаться на консультацию</a>			
-					<a href="#" class="header__btn bnt">							
+					<a class="header__btn-text" href="#">записаться на консультацию</a>
+					<a href="#" class="header__btn bnt">
 						<img src="img/btn.svg" alt="записаться на консультацию">
-					</a>		
+					</a>
 				</div>
 				<div class="social">
 					<a class="social__link">
@@ -47,24 +50,110 @@
 		</header>
 		<section class="services">
 			<div class="services__container">
-				<h2 class="services__title">УСЛУГИ</h2>
+				<h2 class="services__title subtitle">УСЛУГИ</h2>
 				<div class="services__inner">
 					<ul class="services__list list-services">
 						<li class="list-services__title">Полный комплект солнечной электростанции
 						</li>
-						<li class="list-services__text">74 модели солнечных панелей, 31 модель инверторов, провода с повышенной устойчивостью к атмосферным условиям, качественные соединители, контроллеры зарядов и надежные гелевые аккумуляторы с увеличенным сроком службы.</li>
-						<li class="list-services__title">Подбор оборудования 
+						<li class="list-services__text">74 модели солнечных панелей, 31 модель инверторов, провода с повышенной
+							устойчивостью к атмосферным условиям, качественные соединители, контроллеры зарядов и надежные гелевые
+							аккумуляторы с увеличенным сроком службы.</li>
+						<li class="list-services__title">Подбор оборудования
 							с максимальной производительностью
-							</li>
-						<li class="list-services__text">Подбираем солнечные панели с учетом расположения Вашего дома, количеством прямого и рассеянного излучения, для того, чтобы Ваша электростанция - вырабатывала максимальное количество электроэнергии и окупилась как можно быстрее.</li>
+						</li>
+						<li class="list-services__text">Подбираем солнечные панели с учетом расположения Вашего дома, количеством
+							прямого и рассеянного излучения, для того, чтобы Ваша электростанция - вырабатывала максимальное
+							количество электроэнергии и окупилась как можно быстрее.</li>
 						<li class="list-services__title">Монтаж оборудования в соответствии с ГОСТом
 						</li>
-						<li class="list-services__text">Монтаж производится в точном соответствии с ГОСТом, с учетом закона о «Зеленом тарифе» и требованиями Облэнерго. При этом, мы учитываем, чтобы солнечная станция имела максимально возможную производительность.</li>
+						<li class="list-services__text">Монтаж производится в точном соответствии с ГОСТом, с учетом закона о
+							«Зеленом тарифе» и требованиями Облэнерго. При этом, мы учитываем, чтобы солнечная станция имела
+							максимально возможную производительность.</li>
 						<li class="list-services__title">Помощь в подключении к «Зеленому тарифу»
 						</li>
-						<li class="list-services__text">Всю бюрократическую процедуру по подключению Вашей электростанции к «Зеленому тарифу», мы берем на себя, в том числе по увеличению договорной мощности вашего дома. При заказе солнечной электростанции эта услуга абсолютно бесплатна.</li>
+						<li class="list-services__text">Всю бюрократическую процедуру по подключению Вашей электростанции к
+							«Зеленому тарифу», мы берем на себя, в том числе по увеличению договорной мощности вашего дома. При заказе
+							солнечной электростанции эта услуга абсолютно бесплатна.</li>
 					</ul>
 					<img class="services__img" src="img/services-img.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="tarif">
+			<div class="tarif__container">
+				<h2 class="tarif__title subtitle">ЗЕЛЕНЫЙ ТАРИФ</h2>
+				<div class="tarif__inner">
+					<div class="tarif__box">
+						<!-- slider + tabs -->
+						<div class="tarif-tabs">
+							<div class="tarif-tabs__items">
+								<a class="tarif-tabs__item tarif-tabs__item_active" href="#tab-1">продажа</a>
+								<a class="tarif-tabs__item" href="#tab-2">закрепление</a>
+								<a class="tarif-tabs__item" href="#tab-3">ограничения</a>
+							</div>
+							<div class="tarif-tabs__contentbox">
+								<div class="tarif-tabs__content tarif-tabs__content_active" id="tab-1">
+									<div class="tarif-slider">
+										<div class="tarif-slider__item">
+											<img class="tarif-slider__img" src="img/slider-img.jpg" alt="">
+											<p class="tarif-slider__text">Цена, по которой домохозяйства могут продать электроэнергию, более
+												чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт
+												(продажа).</p>
+										</div>
+										<div class="tarif-slider__item">
+											<img class="tarif-slider__img" src="img/slider-img.jpg" alt="">
+											<p class="tarif-slider__text">Цена, по которой домохозяйства могут продать электроэнергию, более
+												чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт
+												(продажа).</p>
+										</div>
+										<div class="tarif-slider__item">
+											<img class="tarif-slider__img" src="img/slider-img.jpg" alt="">
+											<p class="tarif-slider__text">Цена, по которой домохозяйства могут продать электроэнергию, более
+												чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт
+												(продажа).</p>
+										</div>
+									</div>
+								</div>
+								<div class="tarif-tabs__content" id="tab-2">
+									Content 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore quam mollitia
+									doloribus, a quia!
+								</div>
+								<div class="tarif-tabs__content" id="tab-3">
+									Content 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quisquam doloribus
+									laudantium corrupti expedita delectus ratione voluptate! Optio, odit asperiores!
+								</div>
+							</div>
+						</div>
+
+
+						<div class="info">
+							<ul class="info__list list-info">
+								<li class="list-info__item">
+									<h4 class="list-info__title">Гарантия выкупа</h4>
+									<p class="list-info__text">Гарантированный выкуп электроэнергии государством - прописано в НКРЕ №447
+									</p>
+								</li>
+								<li class="list-info__item">
+									<h4 class="list-info__title">Долгосрочно</h4>
+									<p class="list-info__text">это проект, поддерживаемый международными инвестиционными организациями</p>
+								</li>
+								<li class="list-info__item">
+									<h4 class="list-info__title">Вид вложения</h4>
+									<p class="list-info__text">Альтернатива банковским депозитам, окупаемость - от 16% до 18% годовых</p>
+								</li>
+								<li class="list-info__item">
+									<h4 class="list-info__title">Высокая ставка</h4>
+									<p class="list-info__text">Самая высокая тарифная ставка в европе - 0,16 евро</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tarif__content content-tarif">
+						<p class="content-tarif__text">«Зеленый тариф» — это особые тарифные условия, которые позволяют частным
+							домохозяйствам не только потреблять, но и продавать выработанное домашними солнечными электростанциями
+							электричество в электросеть общего пользования.</p>
+						<img class="content-tarif__img" src="img/tarif-img.jpg" alt="">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -72,6 +161,15 @@
 		<footer class="footer"></footer>
 	</div>
 
+	<!-- Script -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+		integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
