@@ -251,3 +251,15 @@ body {
 .slick-right:hover path {
   fill: #a9a32a;
 }
+
+.blockquote {
+  background: url("../img/blockquote-bg.jpg") center/cover no-repeat;
+  padding: 128px 10px 144px;
+  text-align: center;
+}
+.blockquote__text {
+  color: #fff;
+  font-size: 42px;
+  max-width: 670px;
+  margin: 0 auto;
+}
