@@ -262,7 +262,6 @@ body {
 	// .tarif-slider__item
 
 	&__item {
-
 	}
 
 	// .tarif-slider__img
@@ -339,7 +338,6 @@ body {
 			fill: #a9a32a;
 		}
 	}
-
 }
 
 .slick-right {
@@ -353,9 +351,10 @@ body {
 
 // blockquote
 .blockquote {
-	background: url('../img/blockquote-bg.jpg') center / cover no-repeat;
+	background: url("../img/blockquote-bg.jpg") center / cover no-repeat;
 	padding: 128px 10px 144px;
 	text-align: center;
+	margin-bottom: 150px;
 	// .blockquote__text
 
 	&__text {
@@ -366,5 +365,92 @@ body {
 	}
 }
 
+// clients
+.clients {
+	margin-bottom: 150px;
+	// .clients__container
 
+	&__container {
+	}
 
+	// .clients__title
+
+	&__title {
+		margin-bottom: 60px;
+	}
+}
+
+.clients-slider {
+	// .clients-slider__item
+
+	&__item {
+	}
+
+	// .clients-slider__box
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .clients-slider__box-img
+
+	&__box-img {
+		margin-bottom: 30px;
+	}
+
+	// .clients-slider__box-content
+
+	&__box-content {
+	}
+
+	// .clients-slider__box-title
+
+	&__box-title {
+		margin-bottom: 30px;
+		font-weight: 700;
+		max-width: 370px;
+	}
+
+	// .clients-slider__box-list
+
+	&__box-list {
+		margin-bottom: 65px;
+		margin-left: 50px;
+	}
+
+	// .clients-slider__box-item
+
+	&__box-item {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	// .clients-slider__box-btn
+
+	&__box-btn {
+	}
+}
+.clients-btn {
+	position: relative;
+
+	// .clients-btn__link
+
+	&__link {
+	}
+
+	&__text {
+		position: absolute;
+		bottom: 16px;
+		left: 50px;
+		font-size: 18px;
+		color: #303030;
+		transition: all 0.3s ease-in;
+		&:hover {
+			+ .bnt {
+				background-color: #a9a32a;
+			}
+		}
+	}
+}
